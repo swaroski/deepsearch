@@ -62,7 +62,7 @@ export async function POST(req: Request){
 */ 
 
 
-import { NextResponse } from "next/server";
+
 import { generateObject } from 'ai';
 import { createOpenRouter } from '@openrouter/ai-sdk-provider';
 import { z } from "zod";
