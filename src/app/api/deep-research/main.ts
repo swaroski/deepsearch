@@ -17,7 +17,7 @@ export async function deepResearch(researchState: ResearchState, dataStream: any
     while(currentQueries && currentQueries.length > 0 && iteration <=  MAX_ITERATIONS){
         iteration++;
 
-        console.log("We are running on the itration number: ", iteration);
+        console.log("We are running on iteration number: ", iteration);
 
         const searchResults = currentQueries.map((query: string) => search(query, researchState, activityTracker));
         const searchResultsResponses = await Promise.allSettled(searchResults)
