@@ -16,7 +16,7 @@ import { useDeepResearchStore } from "@/store/deepResearch";
 import { Loader2 } from "lucide-react";
 
 const formSchema = z.object({
-  input: z.string().min(2).max(200),
+  input: z.string().min(2).max(500),
 });
 
 const UserInput = () => {
