@@ -211,7 +211,7 @@ import {
             queries: z
               .array(z.string())
               .describe(
-                "Search queries for missing informationo. Max 3 queries."
+                "Search queries for missing information. Max 3 queries."
               ),
           }),
           activityType: "analyze"
@@ -235,7 +235,7 @@ import {
   
   export async function generateReport(researchState: ResearchState, activityTracker: ActivityTracker) {
     try {
-      activityTracker.add("generate","pending",`Geneating comprehensive report!`);
+      activityTracker.add("generate","pending",`Generating a comprehensive report!`);
   
       const contentText = combineFindings(researchState.findings);
   
